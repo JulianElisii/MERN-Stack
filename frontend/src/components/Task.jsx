@@ -119,9 +119,13 @@ const Task = () => {
                         <textarea onChange={handelInput} name="description" value={Imput.description} cols="30" rows="10" placeholder="Task Description" className="materialize-textarea"></textarea>
                       </div>
                     </div>
-                    <button onClick={SendUser} className="btn light-blue darken-4">
-                      Send 
-                    </button>
+                    <div>
+                     {Imput._id
+                       ? <button onClick={SendUser} className="btn light-blue darken-4"> update </button>
+                                                        :     
+                        <button onClick={SendUser} className="btn light-blue darken-4"> Send </button>         
+                     }             
+                   </div> 
                   </form>
                 </div>
               </div>

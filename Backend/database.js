@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 const URLDB = "mongodb://127.0.0.1:27017/mern-stacks"
 
